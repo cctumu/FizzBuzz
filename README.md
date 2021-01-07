@@ -3,24 +3,8 @@ This program solved the "FizzBuzz" quiz that prints the numbers from 1 to 100. B
 
 ### Dockerfile
 
-```shell
-FROM python:3-slim
+[Docker file](Dockerfile)
 
-# set a directory for the app
-WORKDIR /usr/src/FizzBuzz
-
-# copy all the files to the container
-COPY . .
-
-# install dependencies
-RUN pip install --no-cache-dir -r requirements.txt
-
-# tell the port number the container should expose
-#EXPOSE 5000
-
-# run the command
-CMD ["python3", "./Fizz_Buzz.py"]
-```
 ### Command to run it in a Docker Container
 
 ```
